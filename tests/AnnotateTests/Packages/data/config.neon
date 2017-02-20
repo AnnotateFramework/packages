@@ -1,0 +1,6 @@
+extensions:
+    packages: Annotate\Packages\DI\PackagesExtension
+
+packages:
+    directories:
+        - %appDir%/data/packages

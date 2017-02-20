@@ -1,0 +1,13 @@
+name: TwitterBootstrap
+version: 3.0.3
+variants:
+    default:
+        styles:
+            - @css/bootstrap.min.css
+        scripts:
+            - @js/bootstrap.min.js
+    themed < default:
+        styles:
+            - @css/bootstrap-theme.min.css
+dependencies:
+    jquery:

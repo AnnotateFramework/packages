@@ -1,0 +1,12 @@
+{
+  "name": "bower-package",
+  "description": "Bower Package",
+  "version": "1.0",
+  "main": [
+    "./css/styles.css",
+    "./js/script.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  }
+}

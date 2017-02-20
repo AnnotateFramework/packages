@@ -1,0 +1,6 @@
+name: jquery
+version: 2.0.3
+variants:
+    default:
+        scripts:
+            - @jquery.min.js
