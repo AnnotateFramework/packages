@@ -23,9 +23,10 @@
     "annotate/diagnostics": "@dev"
   },
   "require-dev": {
+    "annotate/templating": "@dev",
     "annotate/themes": "@dev",
     "nette/tester": "@dev",
-    "latte/latte": "~2.3.0",
+    "latte/latte": "^2.4",
     "janmarek/mockista": "@dev",
     "squizlabs/php_codesniffer": "~2.1",
     "dotblue/codesniffer-ruleset": "@dev"
