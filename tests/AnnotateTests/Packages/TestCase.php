@@ -2,6 +2,7 @@
 
 namespace AnnotateTests\Packages;
 
+use Mockista;
 use Tester;
 
 
@@ -17,7 +18,7 @@ class TestCase extends Tester\TestCase
 
 	protected function setUp()
 	{
-		$this->mockista = new \Mockista\Registry;
+		$this->mockista = new Mockista\Registry();
 	}
 
 

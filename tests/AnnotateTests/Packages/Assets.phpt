@@ -4,7 +4,6 @@ namespace AnnotateTests\Packages;
 
 use Annotate\Packages\Asset;
 use Annotate\Packages\Package;
-use Tester;
 use Tester\Assert;
 
 

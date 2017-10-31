@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Annotate\Packages\Latte;
-
 
 use Annotate\Packages\Loaders\AssetsLoader;
 use Latte;

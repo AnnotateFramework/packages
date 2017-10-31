@@ -2,6 +2,7 @@
 
 namespace Annotate\Packages;
 
+
 interface IAsset
 {
 

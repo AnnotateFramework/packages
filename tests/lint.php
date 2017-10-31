@@ -62,7 +62,7 @@ HELP;
 	return $options;
 };
 
-$echo = function () use (&$context) {
+$echo = function () use (& $context) {
 	if ($context['quiet']) {
 		return;
 	}
@@ -71,7 +71,9 @@ $echo = function () use (&$context) {
 	}
 };
 
-$lintFile = function ($path) use (&$echo, &$context) {
+
+
+$lintFile = function ($path) use (& $echo, & $context) {
 	if (substr($path, -4) != '.php') {
 		return;
 	}
@@ -91,7 +93,7 @@ $lintFile = function ($path) use (&$echo, &$context) {
 	$context['filesCount']++;
 };
 
-$check = function ($path) use (&$check, &$lintFile, &$context) {
+$check = function ($path) use (& $check, & $lintFile, & $context) {
 	if (!is_dir($path)) {
 		return $lintFile($path);
 	}

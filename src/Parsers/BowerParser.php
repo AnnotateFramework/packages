@@ -64,7 +64,6 @@ final class BowerParser implements IParser
 						$aDir,
 						$rDir
 		);
-
 	}
 
 }

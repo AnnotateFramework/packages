@@ -4,6 +4,7 @@ namespace Annotate\Packages\Parsers;
 
 use Annotate\Packages\Package;
 use Nette\DI\Config\Adapters\NeonAdapter;
+use RuntimeException;
 
 
 final class NeonParser implements IParser
@@ -42,13 +43,13 @@ final class NeonParser implements IParser
 
 
 
-	private function mergeVariants(&$neon)
+	private function mergeVariants(& $neon)
 	{
 		foreach ($neon['variants'] as $name => $variant) {
 			if (isset($variant['_extends'])) {
 				$extendsName = $variant['_extends'];
 				if (!isset($neon['variants'][$extendsName])) {
-					throw new \RuntimeException('Cannot extend package variant "' . $name . '". Undefined package variant "' . $extendsName . '"');
+					throw new RuntimeException('Cannot extend package variant "' . $name . '". Undefined package variant "' . $extendsName . '"');
 				}
 				$extends = $neon['variants'][$extendsName];
 				if (!isset($variant['styles'])) {
@@ -78,6 +79,5 @@ final class NeonParser implements IParser
 			}
 		}
 	}
-
 
 }

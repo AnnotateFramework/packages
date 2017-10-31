@@ -2,7 +2,6 @@
 
 namespace Annotate\Packages;
 
-
 use Annotate\Framework\Utils\Strings;
 
 

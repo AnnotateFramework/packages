@@ -2,7 +2,6 @@
 
 namespace Annotate\Packages\Loaders;
 
-
 use Annotate\Packages\Package;
 use Annotate\Packages\PlainAsset;
 use Kdyby\Events\Subscriber;

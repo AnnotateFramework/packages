@@ -277,8 +277,8 @@ class PackageLoader implements Subscriber
 
 
 	/**
-	 * @param          string
-	 * @param  Package $package
+	 * @param  string
+	 * @param  Package
 	 *
 	 * @return void
 	 */

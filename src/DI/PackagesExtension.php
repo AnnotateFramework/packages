@@ -2,7 +2,6 @@
 
 namespace Annotate\Packages\DI;
 
-
 use Annotate\Packages\Latte\Macros;
 use Annotate\Packages\Loaders\AssetsLoader;
 use Annotate\Packages\Loaders\PackageLoader;
